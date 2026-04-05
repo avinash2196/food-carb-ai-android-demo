@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Food Carb Calculator</string>
-    <string name="openai_api_key">Bearer Your_API_KEY</string>
+    <!--
+        Replace the value below with your OpenAI API key before running the app.
+        Never commit a real key to source control — use a backend proxy or
+        environment variable injection in production.
+    -->
+    <string name="openai_api_key">Your_API_KEY_Here</string>
 </resources>
