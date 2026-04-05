@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Splash screen background: solid white with the app's primary colour as a
+     centred circle. Replace this with a branded logo drawable for production use. -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@android:color/white"/>
-    <item>
-        <bitmap
-            android:src="@drawable/splash_image"
-            android:gravity="center" />
-    </item>
+    <item android:drawable="@android:color/white" />
 </layer-list>

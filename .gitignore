@@ -1,33 +1,42 @@
-# Gradle files
+# ── Build outputs ─────────────────────────────────────────────────────────────
 .gradle/
 build/
+app/build/
+captures/
+out/
 
-# Local configuration file (sdk path, etc)
+# ── Local configuration (never commit \u2014 contains SDK path) ─────────────────────
 local.properties
 
-# Log/OS Files
+# ── Logs ─────────────────────────────────────────────────────────────────────
 *.log
+*.hprof
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.apk
-output.json
-
-# IntelliJ
-*.iml
+# ── Android Studio / IntelliJ IDE files ──────────────────────────────────────
 .idea/
+*.iml
 misc.xml
 deploymentTargetDropDown.xml
 render.experimental.xml
+.externalNativeBuild/
+.cxx/
 
-# Keystore files
+# ── Build artifacts ───────────────────────────────────────────────────────────
+*.apk
+*.aab
+output.json
+
+# ── Keystore / signing files (never commit private keys) ─────────────────────
 *.jks
 *.keystore
 
-# Google Services (e.g. APIs or Firebase)
+# ── Google Services ───────────────────────────────────────────────────────────
 google-services.json
 
-# Android Profiling
-*.hprof
+# ── Sensitive secrets \u2014 if you extract API keys to a separate properties file,
+#    add it here so it is never committed:
+# secrets.properties
+
+# ── OS-specific files ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
